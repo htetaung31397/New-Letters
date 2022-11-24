@@ -26,7 +26,6 @@ const data ={
 
   }]
 };
-
 const jsonData =JSON.stringify(data);
 const url ="https://us21.api.mailchimp.com/3.0/lists/331e590d3c";
 options ={
@@ -44,7 +43,6 @@ if (response.statusCode===200){
     console.log(JSON.parse(data));
   })
 })
-
 request.write(jsonData);
 request.end();
 })
